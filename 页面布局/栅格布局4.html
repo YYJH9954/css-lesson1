@@ -6,7 +6,13 @@
               display: grid;
               padding: 10px;
               background-color: lightblue;
-              grid-template-columns: repeat(6,100px)
+              /* grid-template-columns: repeat(auto-fill,200px) */
+              /* auto-fill根据浏览器大小调整一行数量 */
+              /* grid-template-columns: 100px minmax(100px,minmax(100px,1fr) 50%) */
+              /* minmax 浏览器在最大和最小之间取舍*/
+              grid-template-columns: repeat(auto-fit,minmax(100px,1fr))
+              /* auto-fit调整宽度适配浏览器*/
+              /* grid-template-columns: repeat(3,200px) repeat(6,100px) */
               /* grid-template-columns: min-content max-content max-content; */
               /* grid-template-columns: 100px 1fr auto; */
               /* grid-template-columns:200px 1fr 3fr; */
