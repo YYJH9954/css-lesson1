@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>设置子元素的样式</title>
+  <style type="text/css">
+   /* 为不同语言设置不同背景色 */
+ span{
+  color: green;
+ }
+ :not(span){
+  color:red;
+}
+  </style>
+</head>
+<body>
+  <span>DEMO</span>
+  <p lang="zh">尾崎八项</p>
+  <p lang="en">I love China</p>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>边框的各种样式</title>
+  <!-- 定义边框的各种样式 -->
+  <style type="text/css">
+  p.none{ /* 没有边框 */
+    border-style: none;
+  }
+  p.solid{/* 实线边框 */
+    border-style: solid;
+  }
+  p.dashed{ /* 虚线边框 */
+    border-style: dashed;
+  }
+  p.dotted{/* 圆点边框 */
+    border-style: dotted;
+  }
+  p.double{/* 双线边框 */
+    border-style: double;
+  }
+  p.groove{/* 3D槽线边框 */
+    border-style: groove;
+  }
+  p.ridge{/* 3D脊线边框 */
+    border-style: ridge;
+  }
+  p.inset{/* 3D 内凹边框 */
+    border-style: inset;
+  }
+  p.outset{/* 3D 外凸边框 */
+    border-style: outset;
+  }
+  p.hidden{/* 隐藏边框 */
+    border-style: hidden;
+  }
+  /* 边框 */
+ /* p{ 
+   border:solid;
+   border-color: Lime;
+   border-width: 45px;
+ } */
+  /* 边框简写 */
+  p{
+    border:solid 30px lime;
+  }
+  </style>
+  
+</head>
+<body>
+  <p class="none">没有边框</p>
+  <p class="solid">实线边框</p>
+  <p class="dashed">虚线边框</p>
+  <p class="dotted">圆点边框</p>
+  <p class="double">双线边框</p>
+  <p class="groove">3D 槽线边框</p>
+  <p class="ridge">3D 脊线边框</p>
+  <p class="inset">3D 内凹边框</p>
+  <p class="outset">3D 外凸边框</p>
+  <p class="hidden">隐藏边框</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>小甲鱼的部落格</title>
+  <style type="text/css">
+      .item1 { grid-area: header; }
+      .item2 { grid-area: nav; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: aside; }
+      .item5 { grid-area: footer; }
+      
+      .grid-container {
+          display: grid;
+          grid-template-areas:
+              'header header header header header' 180px
+              'nav main main main aside' 250px
+              'nav footer footer footer footer' 160px / 200px 1fr 1fr 1fr 100px ; 
+          /* grid-template-columns: 200px 1fr 1fr 100px; */
+          /* grid-template-columns: 80px 250px 160px; */
+          grid-gap: 10px 20px;
+          background-color: lightblue;
+          padding: 10px;
+      }
+
+      .grid-container > * {
+          background-color: pink;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+      }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+      <header class="item1">Header</header>
+      <nav class="item2">Nav</nav>
+      <main class="item3">
+          <section>Section 1</section>
+          <section>Section 2</section>
+          <section>Section 3</section>
+          <section>Section 4</section>
+          <section>Section 5</section>
+      </main>
+      <aside class="item4">Aside</aside>
+      <footer class="item5">Footer</footer>
+  </div>
+
+</body></html>

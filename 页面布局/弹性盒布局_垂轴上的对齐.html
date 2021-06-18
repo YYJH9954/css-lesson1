@@ -1,0 +1,34 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>垂轴上的对齐</title>
+  <style type="text/css">
+          .flex-container {
+              display: flex;
+              height: 500px;
+              align-items: baseline;
+              align-items: baseline;
+              /* 机械对齐 */
+              background-color: pink;
+          }
+  
+          .flex-container > div {
+              margin: 20px;
+              padding: 20px;
+              color: white;
+              background-color: lightblue;
+          }
+          .special {
+              align-self: flex-end;
+          }
+      </style>
+</head>
+  <body>
+  <div class="flex-container">
+  <div>one</div>
+  <div style="font-size: 2em">two<br>two</div>
+  <div class="special">three<br>three<br>three</div>
+  <div>four<br>four<br>four<br>four</div>
+  <div>five<br>five<br>five<br>five<br>five</div>
+  </div>
+  
+  </body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    :enabled{
+      outline: 1px solid green;
+    }
+    :disabled{
+      outline: 1px solid #dddddd;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <p>
+    <label for="enabled">可用:</label>
+    <input type="text" name="enabled">
+    </p>
+    <p>
+    <label for="disabled">禁用:</label>
+    <input type="text" name="disabled" disabled="">
+    </p>
+    <button type="submit">可用按钮</button>
+    <button type="submit" disabled="">不可用按钮</button>
+    </form>
+</body>
+</html>

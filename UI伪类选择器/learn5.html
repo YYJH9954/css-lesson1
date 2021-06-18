@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>设置输入合法与非法的样式</title>
+</head>
+<style type="text/css">
+  input:valid{
+    border: 2px solid green;
+  }
+  input:invalid{
+    border: 2px solid red;
+  }
+  input:in-range{
+    border:2px solid green;
+  }
+  input:out-of-range{
+    border:2px solid red;
+  }
+  /* 设置输入在“只读”与“可读可写”属性的对应样式 */
+  input:read-only{
+    background-color: red;
+  }
+  input:read-write{
+    background-color: yellow;
+  }
+</style>
+<body>
+  <form>
+    <input type="email" placeholder="请输入您的邮箱^o^">
+    <button type="submit">提交</button>
+    </form>
+    <form>
+      <input type="number" min="0" max="99" value="66">
+      <button type="submit">提交</button>
+    </form>
+    <p>普通的 input 输入框：<input type="text"></p>
+    <p>只读的 input 输入框：<input readonly="" type="text"></p>
+    
+</body>
+</html>

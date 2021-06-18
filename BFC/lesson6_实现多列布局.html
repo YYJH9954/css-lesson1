@@ -1,0 +1,23 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>实现多列布局</title>
+  <style type="text/css">
+      /* 请将p元素的文本拆分成5列显示 */
+      div.columns {
+        /* column-count:5;
+        column-width: 200px; */
+          columns: 5 200px;
+      }
+
+      h2 {
+          column-span: all;
+      }
+  </style>
+  </head>
+  <body>
+  <div class="columns">
+  <h2>下面这一大段文本，你想拆分成多少列，就能够拆分成多少列^o^</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam temporibus voluptates laboriosam aut, corrupti magnam aperiam consequuntur totam earum rem reprehenderit ea officia nam natus necessitatibus nulla aliquam! Architecto in, porro soluta illo, ullam recusandae accusantium aliquam non inventore totam optio itaque eum, qui incidunt consectetur iusto? Repellat, natus sint?</p>
+  </div>
+  
+  </body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<style type="text/css">
+  :required{
+    outline:3px solid red;
+  }
+  :optional{
+    outline:3px solid green;
+  }
+  :default{
+    outline:3px solid pink;
+  }
+  </style>
+<body>
+  <form>
+    <p>
+    <label for="required">必填:</label>
+    <input type="text" name="required" required="">
+    </p>
+    <p>
+    <label for="potional">可选:</label>
+    <input type="text" name="potional">
+    </p>
+    <button type="submit">提交</button>
+    </form>
+</body>
+</html>
