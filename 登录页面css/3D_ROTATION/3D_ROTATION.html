@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3D ROTATION</title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+      background: rgba(140, 222, 247, 0.74);
+    }
+    h3{
+      text-align: center;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    .main{
+      width: 200px;
+      height: 300px;
+      position:absolute;
+      /* border: 3px solid black; */
+      left: calc(50% - 100px);
+      top: calc(50% - 150px);
+      transform: rotate(-90deg);
+    }
+    .contain{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left:0;
+      top:0;
+      /* border: 3px solid red; */
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      animation: run 10s linear infinite;
+    }
+   .contain .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border:5px solid black;
+   }
+   .contain .item img {
+    width: 100%;
+    height: 100%;
+   }
+   .contain .item:nth-child(2){
+     transform: rotateX(45deg);
+   }
+   .contain .item:nth-child(3){
+     transform: rotateX(-45deg);
+   }
+   .contain .item:nth-child(4){
+     transform: rotateX(90deg);
+   }
+   @keyframes run {
+     0%{
+       transform: perspective(1000px) rotateX(0deg);
+     }
+     100%{
+       transform:  perspective(1000px) rotateX(360deg);
+     }
+   }
+  </style>
+</head>
+<body>
+  <h3>3D ROTATION</h3>
+  <div class="main">
+    <div class="contain">
+      <div class="item"><img src="images/1.jpg" alt=""></div>
+      <div class="item"><img src="images/2.jpg" alt=""></div>
+      <div class="item"><img src="images/3.jpg" alt=""></div>
+      <div class="item"><img src="images/4.jpg" alt=""></div>
+      <div class="item"><img src="images/5.jpg" alt=""></div>
+    </div>
+  </div>
+</body>
+</html>
