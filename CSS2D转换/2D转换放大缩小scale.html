@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2D放大缩小</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin:100px auto;
+      /* transform-origin: left bottom; */
+    }
+    div:hover{
+      /* transform: scale(x,y) 就是倍数的意思1倍不变，2表示2倍 */
+      transform: scale(2);
+      /* scale 不影响其他盒子，中心缩放 */
+    }
+  
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

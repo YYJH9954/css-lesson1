@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>综合</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    transition: all .5s ;
+  }
+  div:hover{
+    /* 执行顺序：先旋转会改变坐标轴方向，
+    有位移和其他属性的时候，位移要在最前边哦~ */
+    transform: translate(50px,50px) rotate(180deg);
+  }
+</style>
+<body>
+  <div></div>
+</body>
+</html>

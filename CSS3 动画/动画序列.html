@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>动画顺序</title>
+  <style>
+    div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    animation: move 2s ;
+    /* 是否反方向播放   alternate反方向*/
+    /* animation-direction: alternate; */
+    /* infinite 无限循环 */
+    /*  animation-fill-mode 是否返回起始点  默认backwards返回,forwards保持结束状态*/
+    animation-fill-mode: forwards;
+  }
+  div:hover{
+    /* 鼠标经过div 让这个div动画停止，鼠标离开继续动画 */
+    animation-play-state: paused;
+  }
+  @keyframes move {
+    0%{
+      transform: translateX(0, 0);
+    }
+    100%{
+      transform: translate(1000px, 0);
+    }
+    /* 25%{
+      transform: translate(1000px, 0);
+    }
+    50%{
+      transform: translate(1000px, 500px);
+    }
+    75%{
+      transform: translate(0, 500px);
+      
+    }
+    100%{
+      transform: translate(0, 0);
+    } */
+  }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
