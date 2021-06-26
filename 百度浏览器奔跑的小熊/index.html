@@ -4,8 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
+  <title>百度浏览器奔跑的小熊</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      overflow: hidden;
+      background: #464853;
+    }
+    div[class^="mountain"]{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3840px;
+    }
+    .mountains{
+      animation: mountain_move 0.8s ease-out 0s 1 normal forwards;
+    }
+    .mountain-1{
+      height: 336px;
+      z-index: 3;
+      background:url(./images/mountain1.png) repeat-x;
+    }
+    .mountain-2{
+      height: 384px;
+      z-index: 3;
+      background:url(./images/mountain2.png) repeat-x;
+    }
+    .mountain-3{
+      height: 569px;
+      z-index: 3;
+      background:url(./images/mountain3.png) repeat-x;
+    }
+    .bear{
+      position:absolute;
+      bottom: 35px;
+      width: 200px;
+      height: 100px;
+      z-index: 4;
+      background: url(./images/xiong.png) no-repeat;
+    }
+    @keyframes mountain_move{
+      0%{
+        transform: scale(1.5);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+    @keyframes move{
+      0%{
+        transform: scale(1.5);
+      }
+      100%{
+        transform: scale(1);
+      }
+    } 
+  </style>
 </head>
 <body>
+  <div class="mountains">
+    <div class="mountain-1"></div>
+    <div class="mountain-2"></div>
+    <div class="mountain-3"></div>
+  </div>
+  <div class="bear"></div>
 </body>
 </html>
